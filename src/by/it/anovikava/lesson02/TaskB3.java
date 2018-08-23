@@ -10,6 +10,10 @@ package by.it.anovikava.lesson02;
 */        
 class TaskB3 {
         public static void main(String[] args) {
+            System.out.print("C Новым");
+            System.out.print(" ");
+            System.out.println("Годом");
+
 //        String s = "C";
 //        System.out.println("Новым Годом");
 //        System.out.println("C Новым");
@@ -20,5 +24,6 @@ class TaskB3 {
 //        System.out.print("C Новым!");
 //        System.out.print(" ");
 //        System.out.println("Годом");
+
     }
 }
