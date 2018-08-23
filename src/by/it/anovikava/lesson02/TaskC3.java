@@ -1,5 +1,7 @@
 package by.it.anovikava.lesson02;
 
+import java.util.Scanner;
+
 /*
 Ускорение свободного падения на Земле и Марсе таково:
 Марс   3.86
@@ -30,5 +32,18 @@ package by.it.anovikava.lesson02;
 
 */
 class TaskC3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Введите свой вес в килограммах: ");
+        int weight = sc.nextInt();
+        System.out.format("%.2f%n", getWeight (weight));
 
-}
+    }
+
+    private static double getWeight(int weightEarth) {
+
+        double P = (weightEarth *(3.86/9.81));
+        return P;
+
+    }
+    }
