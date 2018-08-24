@@ -1,5 +1,6 @@
 package by.it.anovikava.lesson02;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 /*
@@ -36,14 +37,20 @@ class TaskC3 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите свой вес в килограммах: ");
         int weight = sc.nextInt();
-        System.out.format("%.2f%n", getWeight (weight));
+        Locale.setDefault(Locale.ENGLISH);
+        System.out.format("%.2f%n", getWeight(weight));
+
 
     }
 
-    private static double getWeight(int weightEarth) {
+     static double getWeight(int weightEarth) {
 
-        double P = (weightEarth *(3.86/9.81));
-        return P;
+        double P = (weightEarth * (3.86 / 9.81));
+        double delta = P * 100 - (int) (P * 100);
+        if (delta < 0.5)
+            return ((int) (P * 100) )/ 100.0;
+        else
+            return( (int) (P * 100 + 1)) / 100.0;
 
     }
-    }
+}
