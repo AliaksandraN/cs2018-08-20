@@ -22,10 +22,13 @@ package by.it.anovikava.lesson03;
 public class TaskC2 {
 
 
+    public static int sumDigitsInNumber(int number){
 
+        return number;
+    }
 
-//    public static void main(String[] args) {
-//        System.out.println(sumDigitsInNumber(5467));
-//    }
+    public static void main(String[] args) {
+        System.out.println(sumDigitsInNumber(5467));
+    }
 
 }
