@@ -1,4 +1,6 @@
 package by.it.anovikava.lesson03;
+
+
 /*
     Сумма цифр четырехзначного числа
 
@@ -22,12 +24,16 @@ package by.it.anovikava.lesson03;
 public class TaskC2 {
 
 
-    public static int sumDigitsInNumber(int number){
-
-        return number;
+    public static int sumDigitsInNumber(int a){
+      int a1 = a/1000;
+      int a2 = a/100%10;
+      int a3 = a/10%10;
+      int a4 = a%10;
+        return a1+a2+a3+a4;
     }
 
     public static void main(String[] args) {
+
         System.out.println(sumDigitsInNumber(5467));
     }
 
