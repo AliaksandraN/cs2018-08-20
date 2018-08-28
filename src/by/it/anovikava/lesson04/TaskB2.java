@@ -36,6 +36,8 @@ public class TaskB2 {
             while (j <= size) {
                 if (j > size) break;
                 System.out.print(i * j + " ");
+               // System.out.printf("%4d", (i * j)); так красивше будет
+
                 j++;
             }
             System.out.println();

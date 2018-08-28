@@ -23,6 +23,31 @@ package by.it.anovikava.lesson04;
 десять умножить на десять равно сто
 */
 
-public class TaskC3 {
+import java.util.Locale;
 
-}
+public class TaskC3 {
+    public static void main(String[] args) {
+
+        String[ ] a = new String[] {"один","два","три","четыре","пять","шесть","семь","восемь","девять","десять"};
+        String[ ] b = new String[] {"один","два","три","четыре","пять","шесть","семь","восемь","девять","десять"};
+
+        for (int i = 1; i <= 10; i++){
+           // int j = 1;
+           // while (j <= 10) {
+                //if (j > 10) break;
+            for (int j = 1; j < 10; j++)
+                System.out.println(a[i] + " умножить на " + b[j] + " равно " + (i+1)*(j+1));
+
+
+                //j++;
+            }
+            //System.out.println();
+           // i++;
+
+        }
+
+
+
+    }
+
+
