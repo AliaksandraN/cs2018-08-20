@@ -1,4 +1,4 @@
-package by.it.anovikava.lesson06;
+package by.it._tasks_.lesson06;
 
 import org.junit.Test;
 
