@@ -2,13 +2,12 @@ package by.it.anovikava.lesson06;
 
 public class Dog {
     private String name;
+    private int age;
     private int weight;
     private double power;
-    private int age;
 
-    public Dog(int weight, double power) {
-        this.weight = weight;
-        this.power = power;
+
+    public Dog() {
     }
 
     public Dog(String name, int age) {
@@ -16,8 +15,14 @@ public class Dog {
         this.age = age;
     }
 
-    public Dog() {
+    public Dog(String name, int age, int weight, double power) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        this.power = power;
     }
+
+
 
     public String getName() {
         return name;
@@ -33,6 +38,14 @@ public class Dog {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public void setPower(double power) {
+        this.power = power;
     }
 
     @Override

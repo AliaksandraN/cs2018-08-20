@@ -1,8 +1,7 @@
 package by.it.anovikava.lesson06;
 
 public class DogHelper {
-    private String name;
-    static void printAllNames(Dog[] dogs){
+     static void printAllNames(Dog[] dogs){
      for (Dog dog: dogs) {
             System.out.print(dog.getName()+"");
         }
