@@ -25,9 +25,10 @@ package by.it.anovikava.lesson04;
 
 import java.util.Locale;
 
-/*public class TaskC3 {
+
+public class TaskC3 {
     static String print(int i) {
-        if (i <= 19)
+        if (i <= 19) {
             switch (i) {
                 case 0:
                     return "";
@@ -69,69 +70,64 @@ import java.util.Locale;
                     return "восемнадцать";
                 case 19:
                     return "девятнаддцать";
-                default:
-                    break;
+            }
 
-            }
-         else {
-            int d = i / 10;
-            switch (d) {
-                case 2:
-                    return "двадцать";
-                case 3:
-                    return "тридцать";
-                case 4:
-                    return "сорок";
-                case 5:
-                    return "пятьдесят";
-                case 6:
-                    return "шестьдесят";
-                case 7:
-                    return "семьдесят";
-                case 8:
-                    return "восемьдесят";
-                case 9:
-                    return "девяноста";
-                case 10:
-                    return "сто";
-            }
         }
-    }
 
-       
+        int d = i / 10;
+        String end = i % 10 == 0 ? "" : " " + print(i % 10);
+        switch (d) {
+            case 2:
+                return "двадцать" + end;
+            case 3:
+                return "тридцать" + end;
+            case 4:
+                return "сорок" + end;
+            case 5:
+                return "пятьдесят" + end;
+            case 6:
+                return "шестьдесят" + end;
+            case 7:
+                return "семьдесят" + end;
+            case 8:
+                return "восемьдесят" + end;
+            case 9:
+                return "девяноста" + end;
+            case 10:
+                return "сто" + end;
+        }
+        return "неизвестное число";
+    }
 
     public static void main(String[] args) {
-        for (int i = 2; i <= 10 ; i++) {
-            String end;
-            if (i % 10 == 0)
-                end = " ";
-            else end = " " + print(i % 10);
-            for (int j = 2; j <= 10 ; j++) {
-                System.out.println(print(i)+ " умножить на " + print(j) + " равно " + print(i*j)+"end");
+
+
+        for (int i = 2; i <= 10; i++) {
+
+
+            for (int j = 2; j <= 10; j++) {
+
+
+                System.out.println(print(i) + " умножить на " + print(j) + " равно " + print(i * j));
+
 
             }
 
         }
 
+
     }
-}*/
 
-        /*String[ ] a = new String[] {"один","два","три","четыре","пять","шесть","семь","восемь","девять","десять"};
-        //String[ ] b = new String[] {"один","два","три","четыре","пять","шесть","семь","восемь","девять","десять"};
 
-        for (int i = 1; i <= 10; i++){
-           // int j = 1;
-           // while (j <= 10) {
-                //if (j > 10) break;
-            for (int j = 1; j < 10; j++)
-                System.out.println(a[i] + " умножить на " + b[j] + " равно " + (i+1)*(j+1));
+}
 
-                //j++;
-            }
-            //System.out.println();
-           // i++;
 
-        }*/
+
+
+
+
+
+
 
 
 
